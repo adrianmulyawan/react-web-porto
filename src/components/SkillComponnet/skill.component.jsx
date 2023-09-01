@@ -15,13 +15,13 @@ import git from '../../assets/icons8-git.svg';
 import bootstrap from '../../assets/icons8-bootstrap.svg';
 import daisy from '../../assets/icons8-blossom-48.png';
 
-const SkillComponent = () => {
+const SkillComponent = ({ textColor }) => {
   return (
     <div className='container my-5 py-sm-0 py-md-0 py-lg-3 position-relative'>
       <h1 className='text-center' style={{ fontWeight: 'bold', color: '#4C70EF', fontSize: '30px', letterSpacing: '10px', marginTop: '48px' }}>
         WHAT I DO
       </h1>
-      <h3 className='text-center my-3' style={{ fontWeight: 'bold', fontSize: '30px', letterSpacing: '5px' }}>
+      <h3 className='text-center my-3' style={{ fontWeight: 'bold', fontSize: '30px', letterSpacing: '5px', color: textColor }}>
         SPECIALIZATION IN
       </h3>
       <div className="d-flex justify-content-center align-items-center my-4">

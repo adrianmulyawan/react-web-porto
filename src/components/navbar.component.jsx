@@ -2,7 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 
 const NavbarComponent = (props) => {
-  const { title } = props;
+  const { title, changeTextColor } = props;
   const [mode, setMode] = useState('Light Mode');
   const [icon, setIcon] = useState(true);
   const [navbarClass, setNavbarClass] = useState('navbar navbar-expand-lg bg-light');
@@ -14,12 +14,16 @@ const NavbarComponent = (props) => {
       setMode('Dark Mode');
       setIcon(false);
       setNavbarClass('navbar fixed-top navbar-expand-lg bg-dark');
-      setBsTheme('dark')
+      setBsTheme('dark');
+      document.body.style.backgroundColor = '#212121';
+      changeTextColor();
     } else {
       setMode('Light Mode');
       setIcon(true);
       setNavbarClass('navbar fixed-top navbar-expand-lg bg-light');
-      setBsTheme('light')
+      setBsTheme('light');
+      document.body.style.backgroundColor = '#fff';
+      changeTextColor();
     }
   }
 

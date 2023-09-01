@@ -1,5 +1,6 @@
 import React from 'react';
 import CardPortofolioComponent from './CardPortofolio.component';
+import portoImage from '../../assets/porto-img.jpeg'
 
 const PortofolioComponent = () => {
   return (
@@ -8,9 +9,14 @@ const PortofolioComponent = () => {
         PORTOFOLIO
       </h1>
       <div className="row justify-content-center align-items-center py-sm-0 py-md-0 py-lg-2">
-        <CardPortofolioComponent image = 'https://awsimages.detik.net.id/community/media/visual/2022/09/22/universitas-islam-indonesia.jpeg?w=1200' location = 'Universitas Islam Indonesia' role = 'Lecturer Assistant' time = 'Oct 2019 - Nov 2019' />
-        <CardPortofolioComponent image = 'https://sippn.menpan.go.id/images/article/large/whatsapp-image-2022-03-16-at-1029162.jpeg' location = 'Dinas Kelautan dan Perikanan Prov Kalimantan Barat' role = 'Freelance Fullstack Web Developer' time = 'Sept 2021 - Mar 2022' />
-        <CardPortofolioComponent image = 'https://awsimages.detik.net.id/community/media/visual/2022/09/22/universitas-islam-indonesia.jpeg?w=1200' location = 'Universitas Islam Indonesia' role = 'DevOps Internship' time = 'Nov 2018 - Feb 2019' />
+        <CardPortofolioComponent image = { portoImage } project = 'Website Desa Kuala Secapah' url = 'https://kualasecapah.my.id/'  />
+        <CardPortofolioComponent image = { portoImage } project = 'React Express JS Games Web' url = 'https://github.com/FSW-29/challenge-chapter-11'  />
+        <CardPortofolioComponent image = { portoImage } project = 'Next JS Games App' url = 'https://github.com/FSW-29/ChallengeChapter10' />
+        <CardPortofolioComponent image = { portoImage } project = 'React JS Games App' url = 'https://github.com/FSW-29/ChallengeChapter9' />
+        <CardPortofolioComponent image = { portoImage } project = 'Food Receipe App' url = 'https://react-food-recipe-seven.vercel.app/' />
+        <CardPortofolioComponent image = { portoImage } project = 'SIM Kawasan Konservasi' url = 'https://github.com/adrianmulyawan/salam-konservasi-be' />
+        <CardPortofolioComponent image = { portoImage } project = 'Travel Website' url = 'https://github.com/adrianmulyawan/fullstack-travel' />
+        <CardPortofolioComponent image = { portoImage } project = 'Bootcamp Website' url = 'https://github.com/adrianmulyawan/laracamp' />
       </div>
     </div>
   );
