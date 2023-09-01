@@ -4,7 +4,7 @@ import myAvatar from '../../assets/my_avatar.svg';
 const ProfileComponent = () => {
   return (
     <div className='container d-flex justify-content-center align-items-center position-relative' style={{ marginTop: '48px' }}>
-      <div className="row" style={{ width: '100%', maxWidth: '800px' }}>
+      <div className="row py-sm-0 py-md-0 py-lg-2" style={{ width: '100%', maxWidth: '800px' }}>
         <div className="col-sm-12 col-md-6 col-lg-6 my-sm-0 my-md-0 my-lg-4">
           <img className='img-fluid my-sm-0 my-md-0 my-4' src={ myAvatar } alt="avatar" style={{ maxWidth: '300px' }} />
         </div>
