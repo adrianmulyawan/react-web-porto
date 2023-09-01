@@ -9,6 +9,7 @@ import FooterComponent from './components/footer.component';
 import NavbarComponent from './components/navbar.component';
 
 function App() {
+  document.title = 'Adrian Mulyawan'
   return (
     <>
       <NavbarComponent title = 'Adrian Mulyawan' />
