@@ -1,0 +1,67 @@
+> Exercises:Level 1
+1. What is the importance of React Folder Structure and File Naming
+=> Untuk mempermudah pemanggilan
+=> Mempermudah untuk bug fixing data 
+=> Terlihat lebih rapi
+
+2. How do you export file
+=> menggunakan export
+=> menggunakan export default
+
+3. How do you import file
+=> menggunakan: import { namaComponent } from './directory';
+=> menggunakan: import namaComponent from './directory';
+
+4. Make a component of module and export it as named or default export
+=> ./src/components/navbar.component.jsx
+import React from 'react';
+
+const NavbarComponent = (props) => {
+  const { title } = props;
+  return (
+    <nav className="navbar navbar-expand-lg bg-body-tertiary">
+      <div className="container-fluid">
+        <a className="navbar-brand" href="/">{ title }</a>
+        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li className="nav-item">
+              <a className="nav-link active" aria-current="page" href="/">Home</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="/">About</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="/">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  );
+}
+
+export default NavbarComponent;
+
+5. Make a component or module and import it
+=> ./src/App.js
+import logo from './logo.svg';
+import './App.css';
+import NavbarComponent from './components/navbar.component';
+
+function App() {
+  return (
+    <>
+      <NavbarComponent title = 'Folder Structure React' />
+    </>
+  );
+}
+
+export default App;
+
+6. Change all the components you have to different folder structure
+
+> Exercises:Level 2
+1. Make a simple portfolio using the components we have created so far. Implement a dark mode by using the function we wrote on day 8 challenge.
