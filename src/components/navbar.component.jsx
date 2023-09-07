@@ -42,14 +42,14 @@ const NavbarComponent = (props) => {
     if (mode === 'Light Mode') {
       setMode('Dark Mode');
       setIcon(false);
-      setNavbarClass('navbar fixed-top navbar-expand-lg bg-dark');
+      setNavbarClass('navbar navbar-expand-lg bg-dark');
       setBsTheme('dark');
       document.body.style.backgroundColor = '#212121';
       changeTextColor();
     } else {
       setMode('Light Mode');
       setIcon(true);
-      setNavbarClass('navbar fixed-top navbar-expand-lg bg-light');
+      setNavbarClass('navbar navbar-expand-lg bg-light');
       setBsTheme('light');
       document.body.style.backgroundColor = '#fff';
       changeTextColor();
@@ -57,7 +57,7 @@ const NavbarComponent = (props) => {
   }
 
   return (
-    <nav className={ navbarClass } data-bs-theme={ bsTheme }>
+    <nav className={`fixed-top ${navbarClass}`} data-bs-theme={ bsTheme }>
       <div className="container p-2 my-auto">
         <Link className="navbar-brand" onClick={ goHome }>{ title }</Link>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
