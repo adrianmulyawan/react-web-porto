@@ -17,7 +17,7 @@ import daisy from '../../assets/icons8-blossom-48.png';
 
 const SkillComponent = ({ textColor }) => {
   return (
-    <div className='container my-5 py-sm-0 py-md-0 py-lg-3 position-relative'>
+    <div className='container my-5 py-sm-0 py-md-0 py-lg-3 position-relative' id='skill-component'>
       <h1 className='text-center' style={{ fontWeight: 'bold', color: '#4C70EF', fontSize: '30px', letterSpacing: '10px', marginTop: '48px' }}>
         WHAT I DO
       </h1>
@@ -25,7 +25,7 @@ const SkillComponent = ({ textColor }) => {
         SPECIALIZATION IN
       </h3>
       <div className="d-flex justify-content-center align-items-center my-4">
-        <div className="row justify-content-start">
+        <div className="row justify-content-center">
           <ImageSkillComponent image = { html } />
           <ImageSkillComponent image = { css } />
           <ImageSkillComponent image = { javascript } />

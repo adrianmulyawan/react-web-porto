@@ -3,9 +3,9 @@ import CardWorkComponent from './CardWork.component';
 
 const WorkExperience = () => {
   return (
-    <div className='container my-4 py-sm-0 py-md-0 py-lg-3 position-relative'>
+    <div className='container my-4 py-sm-0 py-md-0 py-lg-3 position-relative' id='experience-component'>
       <h1 className='text-center' style={{ fontWeight: 'bold', color: '#4C70EF', fontSize: '30px', letterSpacing: '5px', marginTop: '0' }}>
-        WORK EXPEEIENCE
+        WORK EXPERIENCE
       </h1>
       <div className="row justify-content-center align-items-center py-sm-0 py-md-0 py-lg-2">
         <CardWorkComponent image = 'https://awsimages.detik.net.id/community/media/visual/2022/09/22/universitas-islam-indonesia.jpeg?w=1200' location = 'Universitas Islam Indonesia' role = 'Lecturer Assistant' time = 'Oct 2019 - Nov 2019' />

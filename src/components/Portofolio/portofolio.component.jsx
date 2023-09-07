@@ -4,7 +4,7 @@ import portoImage from '../../assets/porto-img.jpeg'
 
 const PortofolioComponent = () => {
   return (
-    <div className='container my-4 py-sm-0 py-md-0 py-lg-3 position-relative'>
+    <div className='container my-4 py-sm-0 py-md-0 py-lg-3 position-relative' id='portofolio-component'>
       <h1 className='text-center' style={{ fontWeight: 'bold', color: '#4C70EF', fontSize: '30px', letterSpacing: '5px', marginTop: '0' }}>
         PORTOFOLIO
       </h1>
