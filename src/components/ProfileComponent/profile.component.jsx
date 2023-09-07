@@ -2,6 +2,10 @@ import React from 'react';
 import myAvatar from '../../assets/my_avatar.svg';
 
 const ProfileComponent = ({ textColor }) => {
+  const goMyCV = () => {
+    window.open('https://drive.google.com/file/d/1fXO0LL7PB8et3onLTqvviCLTIRkwc6qt/view');
+  };
+
   return (
     <div className="container" id='profile-component'>
       <div className='d-flex justify-content-center align-items-center position-relative' style={{ marginTop: '48px' }}>
@@ -15,7 +19,9 @@ const ProfileComponent = ({ textColor }) => {
             <p className='text-start my-3' style={{ fontSize: '18px', color: textColor }}>
               a recent Computer Science graduate from the Islamic University of Indonesia. Proficient in web programming, I actively participated in various roles during my studies: as a teaching assistant, in student organizations, and on committees. Excited to apply my skills and experiences to the professional realm, I'm well-equipped to excel in the dynamic field of web development.
             </p>
-            <a href="https://drive.google.com/file/d/1fXO0LL7PB8et3onLTqvviCLTIRkwc6qt/view" target="_blank" rel="noopener noreferrer" className='text-center bg-warning btn btn-md p-2 my-2' style={{ width: '250px', fontWeight: 'bold', color: '#000', fontSize: '14px' }}>Download CV</a>
+            <button className='text-center bg-warning btn btn-md p-2 my-2' style={{ width: '250px', fontWeight: 'bold', color: '#000', fontSize: '14px' }} onClick={ goMyCV }>
+              Download CV
+            </button>
           </div>
         </div>
       </div>
